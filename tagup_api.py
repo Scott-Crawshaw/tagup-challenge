@@ -20,4 +20,10 @@ def post_data():
 
     return "", 201
 
+@api.route('/statistics/<string:id>')
+def get_stats(id):
+    response = {"last_measurement" : last_measurement, "count" : count}
+    response["avg"] = sum(measurements[id])/(len(measurements[id]) or 1)
+    return response, 200
+
 api.run()
