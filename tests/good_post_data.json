@@ -1,0 +1,42 @@
+[[{
+    "sensor": "sensor1",
+    "timestamp": "2021-11-08T21:38:09+00:00",
+    "value": 2
+  }, {
+    "sensor": "sensor0",
+    "timestamp": "2021-11-09T21:38:09+01:00",
+    "value": 3
+  }],
+  [{
+    "sensor": "sensor1",
+    "timestamp": "2021-11-08T21:38:09+00:00",
+    "value": 2.1
+  }, {
+    "sensor": "sensor1",
+    "timestamp": "2021-11-09T21:38:10+00:00",
+    "value": 1.0
+  }, {
+    "sensor": "sensor1",
+    "timestamp": "2021-11-09T21:38:11+00:00",
+    "value": 2.2
+  }],
+  [],
+  [{
+    "sensor": "79",
+    "timestamp": "2019-10-08T21:38:09+00:00",
+    "value": 2.1
+  }, {
+    "sensor": "78",
+    "timestamp": "2005-11-09T21:38:10+00:00",
+    "value": 1.0120312
+  }, {
+    "sensor": "79",
+    "timestamp": "2008-11-09T21:38:11+00:00",
+    "value": 2000000
+  }],
+  [{
+    "sensor": "sensor0",
+    "timestamp": "2021-11-08T21:38:09+00:00",
+    "value": 0.1
+  }]
+]
