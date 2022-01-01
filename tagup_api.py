@@ -52,4 +52,4 @@ def delete_stats(id):
     measurements.pop(id, None)
     return "", 204
 
-api.run()
+api.run(port=8080)
