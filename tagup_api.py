@@ -33,7 +33,7 @@ def post_data():
 
 # returns the following as a JSON object:
 # timestamp of last measurement for sensor ('null' if no measurements)
-# total number of measurements sent to server for sensor
+# total number of measurements for sensor (0 if no measurements)
 # average value of measurements for sensor (0 if no measurements)
 @api.route('/statistics/<string:id>', methods = ["GET"])
 def get_stats(id):
