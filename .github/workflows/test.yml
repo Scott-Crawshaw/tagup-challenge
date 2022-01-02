@@ -1,11 +1,11 @@
-name: workflow-name
-on: push
+name: Run_Tests
+on: [push, pull_request]
 
 jobs:
   job-name:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out code
+    - name: Check out repo
       uses: actions/checkout@v2
     - name: Build image
       run: docker build -t exercise:latest .
