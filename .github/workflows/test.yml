@@ -3,7 +3,7 @@ on: push
 
 jobs:
   job-name:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Check out code
       uses: actions/checkout@v2
