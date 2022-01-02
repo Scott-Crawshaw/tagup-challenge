@@ -3,13 +3,13 @@ on: push
 
 jobs:
   job-name:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - name: Check out code
       uses: actions/checkout@v2
     - name: Build image
       run: docker build -t exercise:latest .
     - name: Run container
-      run: docker run --rm -it -p 8080:8080 exercise:latest
+      run: docker run --rm -p 8080:8080 exercise:latest
     - name: Run tests
       run: pytest
