@@ -7,6 +7,7 @@ from collections import defaultdict
 api = Flask("tagup-api")
 measurements = defaultdict(list)  # Using defaultdict helps eliminate sensor initialization code.
 
+
 # Returns 204 if server is running.
 @api.route('/healthz', methods=["GET"])
 def get_healthz():
