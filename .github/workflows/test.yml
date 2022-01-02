@@ -1,0 +1,17 @@
+name: Run_Tests
+on: [push, pull_request]
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Build image
+      run: docker build -t exercise:latest .
+    - name: Run container
+      run: docker run --rm -d -p 8080:8080 exercise:latest
+    - name: Install pytest
+      run: pip3 install pytest
+    - name: Run tests
+      run: cd tests; pytest
